@@ -1,0 +1,18 @@
+Libraries Used
+
+1. argparse: CLI interface (built-in)
+2. os: File and directory operations (built-in)
+3. pathlib: Path handling (built-in)
+4. shutil: Copy, move, archive (built-in)
+5. subprocess: Execute Linux commands (built-in)
+6. logging: Logging (built-in)
+7. json: JSON handling (built-in)
+8. re: Regular expressions (built-in)
+9. datetime: Date and time (built-in)
+10. psutil: System monitoring
+11. PyYAML: YAML configuration
+12. tabulate: Formatted tables
+13. colorama: Colored terminal output
+14. rich: Professional CLI output
+15. schedule: Python-based scheduling
+16. pytest: Unit testing

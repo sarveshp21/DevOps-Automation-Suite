@@ -1,0 +1,7 @@
+Technologies Used
+
+1. Linux: Project environment and automation
+2. Bash: Shell scripts
+3. Python: Core application
+4. Git: Version control
+5. GitHub: Remote repository
