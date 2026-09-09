@@ -1,0 +1,40 @@
+Module 1: CLI Interface
+
+Description:
+The CLI Interface serves as the entry point of the DevOps Automation Suite. It provides a command-line interface that accepts user commands, parses them using argparse, validates the input, and routes execution to the appropriate module. This module establishes a modular and scalable architecture, allowing each DevOps feature to be implemented independently while keeping the application organized and maintainable. It also provides built-in help and usage information for all available commands.
+
+User
+ │
+ │ ex: python devops.py monitor
+ ▼
+devops.py
+ │
+ ▼
+create_parser()
+ │
+ ▼
+cli.py
+ │
+ ├── Create parser
+ ├── Register commands
+ ├── Link commands with functions
+ └── Return parser
+ │
+ ▼
+devops.py
+ │
+ ├── Parse arguments
+ ├── Find selected command
+ ├── Get corresponding function
+ └── Execute function
+ │
+ ▼
+monitoring.py
+ │
+ └── run(args)
+ │
+ ▼
+Output
+ │
+ ▼
+Program Ends
