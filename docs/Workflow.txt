@@ -38,3 +38,57 @@ Output
  │
  ▼
 Program Ends
+
+
+Module 2: Configuration & Reporting
+
+Description:
+
+The Configuration & Reporting module serves as the central configuration and reporting engine of the DevOps Automation Suite. It is responsible for loading application settings from JSON and YAML configuration files, managing configurable project parameters, and providing a reusable reporting framework. It generates reports in TXT, CSV, JSON, and HTML formats, enabling other modules to present their results in a consistent and organized manner. By centralizing configuration management and report generation, this module improves maintainability, reusability, and scalability across the entire project.
+
+Start
+   │
+   ▼
+User executes:
+python devops.py config
+   │
+   ▼
+devops.py starts the application
+   │
+   ▼
+Load CLI parser from modules/cli.py
+   │
+   ▼
+Parse command-line arguments
+   │
+   ▼
+Route to Configuration & Reporting module
+(config.run(args))
+   │
+   ▼
+Initialize ConfigurationManager
+   │
+   ├── Read config.json
+   └── Read config.yaml
+   │
+   ▼
+Initialize ReportGenerator
+   │
+   ├── Create reports/ directory (if not exists)
+   ├── Create txt/ directory
+   ├── Create csv/ directory
+   ├── Create json/ directory
+   └── Create html/ directory
+   │
+   ▼
+Return configuration data
+   │
+   ▼
+Report generation methods become available
+(TXT, CSV, JSON, HTML)
+   │
+   ▼
+Return control to devops.py
+   │
+   ▼
+End
